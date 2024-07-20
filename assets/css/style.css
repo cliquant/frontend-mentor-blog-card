@@ -1,0 +1,144 @@
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+  --black: #000000;
+
+  --spacing-300: 24px;
+  --spacing-250: 20px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Figtree", sans-serif;
+  background-color: var(--yellow);
+
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.blog-image {
+  max-height: 288px;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+
+  margin-bottom: var(--spacing-300);
+}
+
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+.card-content {
+  text-align: left;
+}
+
+.card {
+  border-radius: 20px;
+
+  max-width: 384px;
+
+  gap: var(--spacing300);
+  padding: var(--spacing-300);
+
+  background-color: var(--white);
+
+  border: 1px solid var(--gray-950);
+  box-shadow: 8px 8px 0 0 var(--black);
+}
+
+.tag {
+  width: fit-content;
+
+  border-radius: var(--spacing-50);
+  padding: var(--spacing-50) var(--spacing-150);
+
+  color: var(--gray-950);
+  line-height: 150%;
+  font-size: 14px;
+  font-weight: 700;
+
+  background-color: var(--yellow);
+}
+
+.date {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+
+  color: var(--gray-950);
+
+  padding-top: var(--spacing-150);
+  padding-bottom: var(--spacing-150);
+}
+
+.blog > h1 {
+  font-size: var(--spacing-300);
+  font-weight: 800;
+  line-height: 150%;
+
+  padding-bottom: var(--spacing-150);
+}
+
+.blog > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+
+  color: var(--gray-500);
+
+  padding-bottom: var(--spacing-300);
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.author > span {
+  font-size: 14px;
+  font-weight: 800;
+}
