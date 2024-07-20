@@ -108,6 +108,14 @@ img {
   line-height: 150%;
 
   padding-bottom: var(--spacing-150);
+
+  -webkit-transition: color 1s;
+  transition: color 0.5s;
+}
+
+.blog > h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 
 .blog > p {
